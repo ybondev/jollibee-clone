@@ -1,0 +1,422 @@
+.navbar {
+  background: #d6001c;
+  border-bottom: 4px solid #ffa400;
+
+  .logo {
+    width: 152px;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .icon {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .btn-secondary-order {
+    background: #fa8003;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+    display: none;
+  }
+
+  .navbar-nav {
+    text-align: center;
+
+    .dropdown-toggle::after {
+      color: #fa8003;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .btn-order {
+      background: #fa8003;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+      width: 100%;
+      max-width: max-content;
+      // display: none;
+      margin: 0 auto;
+
+      &:hover {
+        background: #ff620f;
+      }
+
+      .nav-item {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.index-container {
+  background-image: url("https://queen.jollibee.com.ph/2022/05/home_banner_2_mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 483px;
+  .row:nth-child(1) {
+    .col-md-6 {
+      color: #fff;
+      text-align: center;
+      margin-top: 100px;
+
+      h1 {
+        font-weight: 700;
+        font-size: clamp(2.625rem, 2.3609rem + 1.1268vw, 3.375rem);
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: clamp(1.5625rem, 1.4525rem + 0.4695vw, 1.875rem);
+      }
+
+      .btn-order {
+        text-decoration: none;
+
+        span {
+          font-size: clamp(1.4375rem, 1.2835rem + 0.6573vw, 1.875rem);
+          font-weight: 700;
+          color: #fff;
+          padding: 10px 20px;
+          background: #fa8003;
+          border-radius: 50px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background: #ff620f;
+          }
+        }
+      }
+    }
+  }
+
+  .row:nth-child(2) {
+    margin-top: 200px;
+    text-align: center;
+
+    &::after {
+      content: "";
+      padding-bottom: 80px;
+      width: 100%;
+      border-bottom: 2px solid #e3e3e3;
+    }
+
+    h1 {
+      font-size: clamp(1.125rem, 0.8609rem + 1.1268vw, 1.875rem);
+      font-weight: 700;
+    }
+  }
+}
+
+.row:nth-child(3) {
+  text-align: center;
+
+  h1 {
+    font-weight: 700;
+  }
+
+  .col-md-4 {
+    .img-fluid {
+      border-radius: 30px;
+    }
+  }
+
+  .btn-see-all-promos {
+    text-decoration: none;
+    color: #fff;
+
+    span {
+      background: #fa8003;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: clamp(1.25rem, 1.0739rem + 0.7512vw, 1.75rem);
+      transition: all 0.3s ease-in-out;
+      font-weight: 700;
+
+      &:hover {
+        background: #ff620f;
+      }
+    }
+  }
+}
+
+.row:nth-child(4) {
+  // background: #ffeab8;
+  justify-content: space-around;
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .col-md-3 {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 300px;
+    height: 401px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+
+    h1 {
+      text-align: left;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 500;
+    }
+  }
+
+  .col-md-3:nth-child(2) {
+    background: #d6001c;
+
+    .img-fluid {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 223px;
+    }
+  }
+
+  .col-md-3:nth-child(3) {
+    background: #ffa400;
+
+    .img-fluid {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 230px;
+    }
+  }
+
+  .col-md-3:nth-child(4) {
+    background: #009ca6;
+
+    .img-fluid {
+      position: absolute;
+      top: 73%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 230px;
+    }
+  }
+
+  .col-md-3:nth-child(5) {
+    background: #009ca6;
+
+    .img-fluid {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 226px;
+    }
+  }
+
+  .btn-view-menu {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+
+    span {
+      background: #fa8003;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: clamp(1.25rem, 1.0739rem + 0.7512vw, 1.75rem);
+      transition: all 0.3s ease-in-out;
+      font-weight: 700;
+
+      &:hover {
+        background: #ff620f;
+      }
+    }
+  }
+}
+
+.row:nth-child(5) {
+  border-bottom: 3px solid #ffa400;
+  text-align: center;
+
+  .col-md-6:nth-child(1) {
+    .overlay {
+      position: relative;
+    }
+
+    .overlay::before {
+      content: "";
+      background: #ffa400;
+      width: 219px;
+      height: 218px;
+      border-radius: 30px;
+      position: absolute;
+      top: 0%;
+      right: 12%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      margin-top: -90px;
+    }
+
+    .content {
+      margin: 30px 0;
+
+      h1 {
+        font-size: 30px;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 20px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 30%;
+          border-bottom: 5px solid #ffa400;
+        }
+      }
+
+      p {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .col-md-6:nth-child(2) {
+    .overlay {
+      position: relative;
+    }
+
+    .overlay::before {
+      content: "";
+      background: #d6001c;
+      width: 219px;
+      height: 218px;
+      border-radius: 30px;
+      position: absolute;
+      top: 0%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      margin-top: -90px;
+    }
+  }
+
+  .content {
+    margin: 30px 0;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        border-bottom: 5px solid #d6001c;
+      }
+    }
+
+    p {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+footer {
+  color: #fff;
+  .soc-icon {
+    text-decoration: none;
+
+    .icon {
+      background: #ce0e2d;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 2rem;
+    }
+  }
+
+  .footer-order {
+    text-decoration: none;
+
+    span {
+      background: #fa8003;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 18px;
+      transition: all 0.3s ease-in-out;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+  .footer-nav {
+    text-align: left;
+
+    h6 {
+      color: #212529;
+    }
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #212529;
+      }
+    }
+  }
+
+  .app-download {
+    li {
+      list-style: none;
+    }
+  }
+}
+
+// MEDIA QUERY
+@media screen and (min-width: 768px) {
+  .navbar {
+    .logo {
+      width: 225px;
+    }
+  }
+
+  .index-container {
+    background-image: url("https://queen.jollibee.com.ph/2021/12/home_banner_1.png");
+  }
+}
