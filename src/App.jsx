@@ -12,8 +12,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container-fluid index-container">
-        <div className="container">
+      <div className="index-container">
+        <section>
           <div className="row">
             <div className="col-md-6">
               <h1>Bringing joy to you</h1>
@@ -27,12 +27,13 @@ function App() {
               </div>
             </div>
           </div>
+        </section>
+        <section>
           <div className="row gy-3">
             <div className="col-md-4">
               <img
                 src="https://queen.jollibee.com.ph/2021/12/order_pickup-150x150.png"
                 alt="..."
-                width="150px"
                 className="img-fluid"
               />
               <h1>Order & Pick Up</h1>
@@ -41,7 +42,6 @@ function App() {
               <img
                 src="https://queen.jollibee.com.ph/2021/12/download_app-150x150.png"
                 alt="..."
-                width="150px"
                 className="img-fluid"
               />
               <h1>Download the App</h1>
@@ -50,12 +50,13 @@ function App() {
               <img
                 src="https://queen.jollibee.com.ph/2021/12/8700-150x150.png"
                 alt="..."
-                width="150px"
                 className="img-fluid"
               />
               <h1>#87000</h1>
             </div>
           </div>
+        </section>
+        <section>
           <div className="row gy-3">
             <h1 className="my-5">Exclusive Promos</h1>
             <div className="col-md-4">
@@ -86,6 +87,8 @@ function App() {
               <span>See All Promos</span>
             </a>
           </div>
+        </section>
+        <section>
           <div className="row gy-3">
             <h1>Featured Menu Items</h1>
             <div className="col-md-3">
@@ -94,7 +97,6 @@ function App() {
               <img
                 src="https://queen.jollibee.com.ph/2021/12/chickenjoy.png"
                 alt="..."
-                width="223px"
                 className="img-fluid"
               />
             </div>
@@ -104,7 +106,6 @@ function App() {
               <img
                 src="https://queen.jollibee.com.ph/2022/02/CSyirkKq-Jolly-Spaghetti-Pan_750x750-v4-300x207.png"
                 alt="..."
-                width="300px"
                 className="img-fluid"
               />
             </div>
@@ -114,7 +115,6 @@ function App() {
               <img
                 src="https://queen.jollibee.com.ph/2021/12/burger.png"
                 alt="..."
-                width="281px"
                 className="img-fluid"
               />
             </div>
@@ -127,7 +127,6 @@ function App() {
               <img
                 src="https://queen.jollibee.com.ph/2022/02/LnnuI5ic-1pc-bsteak-300x174.png"
                 alt="..."
-                width="226px"
                 className="img-fluid"
               />
             </div>
@@ -135,6 +134,8 @@ function App() {
               <span>View Menu</span>
             </a>
           </div>
+        </section>
+        <section className="mt-5">
           <div className="row">
             <div className="col-md-6">
               <img
@@ -167,9 +168,9 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <footer class="text-center text-lg-start bg-white text-muted">
+        <footer class="text-center text-lg-start bg-white text-muted mt-5">
           <section class="">
             <div class="container text-center text-md-start">
               <div className="row">
