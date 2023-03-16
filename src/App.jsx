@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // COMPONENTS
 import Navbar from "./components/Navbar";
@@ -7,8 +7,30 @@ import { GrFacebookOption } from "react-icons/gr";
 import { GrInstagram } from "react-icons/gr";
 import { GrTwitter } from "react-icons/gr";
 import { BsWhatsapp } from "react-icons/bs";
+import { GoArrowUp } from "react-icons/go";
 
 function App() {
+  const [backToTopButton, setBackToTopButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        document.querySelector(".navigate-top").style.opacity = 1;
+        setBackToTopButton(true);
+      } else {
+        document.querySelector(".navigate-top").style.opacity = 0;
+        setBackToTopButton(false);
+      }
+    });
+  }, [backToTopButton]);
+
+  const SCROLL_UP = () => {
+    window.scrollTo({
+      top: 0,
+      behaviour: "smooth",
+    });
+  };
+
   return (
     <>
       <Navbar />
@@ -317,12 +339,15 @@ function App() {
                   </ul>
                 </div>
               </div>
-              <div class="text-center p-4 float-start">
-                © 2022 Jollibee Foods Corporation. All rights reserved.
-              </div>
+              <div class="text-center p-4 float-start">ybon.dev</div>
             </div>
           </section>
         </footer>
+        <div className="navigate-top">
+          <button>
+            <GoArrowUp className="icon-arrow" onClick={SCROLL_UP} />
+          </button>
+        </div>
       </div>
     </>
   );
